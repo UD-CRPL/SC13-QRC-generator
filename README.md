@@ -3,6 +3,18 @@ SC13 QRC generator
 
 This software was used to generate the QRC placeholders used in the SC13 poster sessions. It makes use of the PHP QR Code library (http://phpqrcode.sourceforge.net/). 
 
+Docker
+---------------------------
+
+Obtain a bit.ly access token key from:  https://bitly.com/a/oauth_apps                                                 
+Copy the bit.ly api key into the action.php file on this line: $BITLY_ACCESS_TOKEN = "[YOUR BITLY API TOKEN]";
+
+`docker build -t sc_qr`
+
+`docker run --name sc_qr -p 8888:80`
+
+Visit the page at http://localhost:8888/SC13-QRC-generator/
+
 Installation
 ---------------------------
 You'll need an apache web server with PHP support. Copy the source directory somewhere where the web server can see it. 
@@ -26,3 +38,4 @@ The form takes 5 pipe ( | ) separated values per line:
 - Poster Title
 
 The URL will automatically be shortened via bit.ly. Use Chrome or Safari for the best results when printing.
+
