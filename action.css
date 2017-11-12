@@ -13,7 +13,7 @@ body{
 .qrWrapper{
     position: relative;
     width: 100%;
-    height: 675px;
+    height: 750px;
     margin: 25px 0px 0px 0px;
     text-align: center;
     background: white;
@@ -43,12 +43,14 @@ body{
 .bLeft{
     position: absolute;
     left: 0px;
+    bottom: 20px;
     font-size: 40px;
 }
 
 .bRight{
     position: absolute;
     right: 0px;
+    bottom: 20px;
     font-size: 40px;
 }
 
